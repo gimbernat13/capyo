@@ -1,0 +1,108 @@
+# Capyo
+
+> Your llms.txt, and proof it works.
+
+## Capyo: AI Visibility & GEO
+
+Capyo writes your llms.txt and shows you every week which shopper questions got you cited by OpenAI and Perplexity — plus the visits and orders arriving from ChatGPT, Claude and Gemini.
+
+Install: https://apps.shopify.com/capyo-llms-txt-ai-visibility-1?utm_source=site&utm_medium=cta&utm_campaign=launch
+
+Pages:
+- en: https://gimbernat13.github.io/capyo/en/llms-txt-visibility/
+- de: https://gimbernat13.github.io/capyo/de/llms-txt-visibility/
+- fr: https://gimbernat13.github.io/capyo/fr/llms-txt-visibility/
+- es: https://gimbernat13.github.io/capyo/es/llms-txt-visibility/
+- it: https://gimbernat13.github.io/capyo/it/llms-txt-visibility/
+- nl: https://gimbernat13.github.io/capyo/nl/llms-txt-visibility/
+
+Numbers that can't be faked.
+- Every number comes from a dated answer: Capyo asks OpenAI search and Perplexity through their APIs and reads the citations each answer returns. A citation on your own domain is the strongest outcome: surfaced.
+- Every visit counted is a real shopper: An app cannot observe bot traffic, because crawlers run no JavaScript. Capyo sees only real shoppers arriving from AI assistants.
+- Every report shows its work: Each report says exactly how the numbers were produced and on which date, so you can judge the sample for what it is.
+
+Pricing:
+- Free: $0 forever. The llms.txt and AI referral tracking, no card required.
+- Growth: $29 per month. Weekly proof your store gets cited.
+- Pro: $79 per month. When 20 questions aren't enough.
+
+FAQ:
+- Q: Do I need API keys for OpenAI or Perplexity?
+  A: No. Capyo asks the engines through its own API access, so you need no external accounts.
+- Q: Does it add a script to my storefront?
+  A: No. Referral tracking uses Shopify's own pixel sandbox, and the llms.txt is plain Liquid rendered by Shopify.
+- Q: What is the llms.txt file?
+  A: A plain-text file at /llms.txt that AI crawlers read to understand your store. Capyo replaces Shopify's basic one with your products, prices, variants and availability.
+- Q: Can I remove the llms.txt?
+  A: Yes. One click removes the template from your theme and the file reverts to Shopify's default. The file keeps working even if left behind.
+- Q: How do you measure visibility?
+  A: Measured by asking OpenAI search and Perplexity through their APIs. AI answers vary between people and over time; this is a sample, not a ranking.
+- Q: Will this make my store appear more in AI answers?
+  A: No app can promise that. Capyo reports what happened: which questions surfaced your store, which mentioned it, and which left you out.
+- Q: Are you affiliated with OpenAI, Perplexity or Shopify?
+  A: No. Capyo is an independent app, not affiliated with or sponsored by OpenAI, Perplexity, Anthropic, Google or Shopify.
+- Q: What data do you keep?
+  A: No customer names, emails, phones or addresses. Capyo keeps query text, engine answers and referral counts for the report, and deletes everything when you uninstall.
+
+Capyo is an independent app, not affiliated with or sponsored by OpenAI, Perplexity, Anthropic, Google or Shopify. "ChatGPT" and "OpenAI" are trademarks of OpenAI. "Perplexity" is a trademark of Perplexity AI. Visibility figures are a weekly sample of API answers and can vary.
+
+Legal (Capyo: AI Visibility & GEO):
+- Privacy policy: https://gimbernat13.github.io/capyo/en/llms-txt-visibility/privacy/
+- Terms of service: https://gimbernat13.github.io/capyo/en/llms-txt-visibility/terms/
+- Data processing agreement: https://gimbernat13.github.io/capyo/en/llms-txt-visibility/dpa/
+
+## Capyo: Dynamic Pricing
+
+Capyo reads the public pages of the rival shops you add, matches their products to yours by barcode and SKU, and alerts you when one undercuts you. Uncertain matches wait in a confirm queue, so a wrong match never changes a price.
+
+Install: https://apps.shopify.com/capyo-dynamic-pricing-1?utm_source=site&utm_medium=cta&utm_campaign=launch
+
+Pages:
+- en: https://gimbernat13.github.io/capyo/en/undercut/
+- de: https://gimbernat13.github.io/capyo/de/undercut/
+- fr: https://gimbernat13.github.io/capyo/fr/undercut/
+- es: https://gimbernat13.github.io/capyo/es/undercut/
+- it: https://gimbernat13.github.io/capyo/it/undercut/
+- nl: https://gimbernat13.github.io/capyo/nl/undercut/
+
+A suggestion you can check, or an automation you control.
+- Matched by barcode first, SKU second: A shared barcode or GTIN is the strongest signal, so it confirms a match on its own. An exact SKU comes next. Everything else is proposed as a candidate with a confidence score and needs your confirmation before it can do anything.
+- The floor is part of the rule: The floor is computed from the variant's unit cost and the minimum margin you set. A rule without a computable floor cannot auto-apply; the app lists those products as suggestion-only.
+- Every change leaves a trail: Each applied price stores the old price, the new price and its source. Undo restores the previous price within 30 days, while no later change to that variant exists.
+
+Pricing:
+- Free: $0 forever. Watch one rival shop with alerts and approve-only changes.
+- Growth: $50 per month. Automatic repricing inside your margin floor.
+- Scale: $100 per month. For a catalog that keeps growing.
+- Pro: $200 per month. The top of the ladder.
+
+FAQ:
+- Q: How often are rival prices checked?
+  A: Every tracked product is checked once a day. Products you mark as priority are checked every 6 hours. Six hours is the fastest cadence Capyo promises.
+- Q: What happens when a match is uncertain?
+  A: It waits in the confirm queue with up to five candidate products and their confidence scores. You confirm, reject, or paste a rival product URL yourself. A pending match can never alert or change a price.
+- Q: Will it change prices without me?
+  A: Only if you set an automatic rule on a paid plan, and only when the rule's margin floor is computable from the variant's unit cost. Approve-first is the default, and every change can be undone while no later change exists.
+- Q: Can an automatic change go below my cost?
+  A: No. Every rule has a minimum margin floor computed from unit cost, and no automatic or approved change may cross it. Only a manual override with an explicit confirmation can go below the floor, and it is logged as a manual change.
+- Q: What does it cost?
+  A: Free covers 3 products and 1 rival shop. $50/month covers 500 products and 10 rivals, $100/month 2,500 and 25, and $200/month 10,000 and 50. Variants are included; there are no per-product or overage fees.
+- Q: Which rival shops work?
+  A: Public Shopify stores, WooCommerce stores and other shops whose product pages expose structured data. Capyo reads public pages only, respects robots.txt and identifies itself; a shop that blocks it is reported, never forced.
+- Q: Do you read my customers or orders?
+  A: No. The scopes are read_products, write_products and read_inventory. Capyo stores no customer names, emails, addresses or order data, and requests no protected customer data.
+- Q: Am I responsible for the prices it suggests?
+  A: Yes. You approve or set the rules; you own your prices. Capyo does not give legal advice, and you remain responsible for the pricing and competition rules that apply to your store.
+
+Capyo is an independent app and is not affiliated with, endorsed by or sponsored by Shopify. "Shopify" is a trademark of Shopify Inc. You approve or set the rules; you own your prices. Capyo reports the rival prices it can fetch from public pages and does not promise any sales, revenue or profit outcome.
+
+Legal (Capyo: Dynamic Pricing):
+- Privacy policy: https://gimbernat13.github.io/capyo/en/undercut/privacy/
+- Terms of service: https://gimbernat13.github.io/capyo/en/undercut/terms/
+- Data processing agreement: https://gimbernat13.github.io/capyo/en/undercut/dpa/
+
+Legal (Capyo):
+- Privacy policy: https://gimbernat13.github.io/capyo/en/llms-txt-visibility/privacy/
+- Terms of service: https://gimbernat13.github.io/capyo/en/llms-txt-visibility/terms/
+- Data processing agreement: https://gimbernat13.github.io/capyo/en/llms-txt-visibility/dpa/
+- Contact: gimbernat13@gmail.com

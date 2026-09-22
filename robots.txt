@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gimbernat13.github.io/capyo/sitemap-index.xml
