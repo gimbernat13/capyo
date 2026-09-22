@@ -4,6 +4,11 @@ These are the processor terms required by Article 28(3) GDPR. They form part of 
       you do not need to sign or return anything. If your organisation requires a countersigned copy,
       email <a href="mailto:gimbernat13@gmail.com">gimbernat13@gmail.com</a> and we will provide one.
 </p> <h2>1. The parties</h2> <p> <strong>Controller:</strong> you, the merchant that installed the app.<br> <strong>Processor:</strong> Capyo, operated by an individual developer.
+</p> <p>
+This split covers the data listed in section 3. For Capyo's own account, plan, billing and
+      support correspondence with you, Capyo is an independent controller rather than your
+      processor; the <a href="/capyo/nl/undercut/privacy/">Privacy Policy</a>, section 1, describes that
+      side.
 </p> <p class="not-prose my-6 rounded-xl border border-dashed border-line bg-surface px-4 py-3 text-sm text-ink-3">
 Operator legal name and address: see the <a href="/capyo/nl/undercut/privacy/" class="underline">Privacy Policy</a>.
 </p> <p>
@@ -75,7 +80,7 @@ Embeddings for the optional semantic matcher — not active today; when configur
             shortlist, and returns vectors. No prices, order data or customer data
 </td> <td>United States</td> </tr> <tr> <td>Resend</td> <td>United States</td> <td>
 Alert email to the merchant's own address — active only when email sending is enabled;
-            until then no email code path runs and it receives nothing
+            until then no email is sent and Resend receives nothing
 </td> <td>United States</td> </tr> </tbody> </table> <p>
 OpenAI receives product titles because the optional matcher asks for embeddings; that call is
       part of the matching feature you use, and the app asks with its own provider key, never with
@@ -121,7 +126,10 @@ Sessions are deleted immediately on the <code>app/uninstalled</code> webhook, an
       checks for your shop are cancelled. All remaining data about your shop is deleted when
       Shopify sends the <code>shop/redact</code> webhook, 48 hours after uninstall, which deletes
       every row for the shop in every table, or earlier if you ask us in writing. A reinstall
-      inside those 48 hours cancels the scheduled deletion. While the app is installed, rival price
+      inside those 48 hours cancels the scheduled deletion. Database backups are taken daily and
+      rotated after 14 days, so a deleted row can remain inside a backup until that rotation
+      passes; backups are used only for disaster recovery and are never used to restore a deleted
+      shop's data on request. While the app is installed, rival price
       observations older than 12 months and fetch errors older than 30 days are pruned daily.
 </p> <h2>12. Audit</h2> <p>
 On written request we provide the information needed to demonstrate compliance with Article 28

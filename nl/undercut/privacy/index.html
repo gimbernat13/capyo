@@ -5,9 +5,13 @@ This policy explains what data the Shopify app <strong>Capyo: Dynamic Pricing</s
       data controller, and it is not legal advice about the pricing or competition rules that
       apply to you.
 </p> <h2>1. Who is responsible</h2> <p>
-The controller for the processing described here is <strong>Capyo</strong>, operated by an
-      individual developer. Contact for anything in this document, including all data-protection
-      requests: <a href="mailto:gimbernat13@gmail.com">gimbernat13@gmail.com</a>.
+The controller depends on the data. For your relationship with the app — the store record,
+      plan and billing status, and support correspondence — and for this website, the controller is
+<strong>Capyo</strong>, operated by an individual developer. For everything the app processes
+      about your shop's catalog, rivals, matches, alerts and price changes, you are the controller
+      and Capyo acts as your processor under the <a href="/capyo/nl/undercut/dpa/">Data Processing
+      Agreement</a>. Contact for anything in this document, including all data-protection requests:
+<a href="mailto:gimbernat13@gmail.com">gimbernat13@gmail.com</a>.
 </p> <p class="not-prose my-6 rounded-xl border border-dashed border-line bg-surface px-4 py-3 text-sm text-ink-3">
 Operator legal name and address: [to be added]
 </p> <p>
@@ -63,7 +67,8 @@ scopes and refreshed by webhooks and a daily sync.
 </li> <li> <strong>Product-usage events.</strong> Shop domain, an event name from a fixed list
         (install, rival added, catalog synced, match confirmed or rejected, first alert, price
         applied, undo used, plan changed and similar), non-identifying properties, and a timestamp —
-        no personal data, used only to see which setup steps merchants get stuck on.
+        no personal data about your customers, used only to see which setup steps merchants get
+        stuck on.
 </li> <li> <strong>Operational logs.</strong> Error and warning traces from the app's own process:
         the identifiers a job needs (shop domain, job id, error text) written to the container's
         rotating log buffer (three 10 MB files). The web server in front of the app is configured
@@ -125,6 +130,10 @@ We do not use your data for our own advertising, we do not profile you, and we n
         those 48 hours cancels the scheduled deletion. Ask us to delete earlier and we will.
 </li> <li> <strong>Operational logs:</strong> kept only for as long as the container's rotation
         retains them (three 10 MB files), then overwritten.
+</li> <li> <strong>Database backups:</strong> taken daily and rotated after <strong>14 days</strong>,
+        so a row deleted by uninstall or shop-redact can remain inside a backup until that rotation
+        passes. Backups are used only for disaster recovery, are readable only by the server's root
+        and database accounts, and are never used to restore a deleted shop's data on request.
 </li> <li><strong>Support correspondence:</strong> kept up to 24 months, deleted sooner on request.</li> </ul> <h2>9. Who else is involved (sub-processors)</h2> <table> <thead> <tr><th>Sub-processor</th><th>Company country</th><th>What they do</th><th>Where the servers are</th></tr> </thead> <tbody> <tr> <td>Shopify International Ltd</td> <td>Ireland</td> <td>The platform the app runs on and the source of all store data; also handles billing</td> <td>Per Shopify's own DPA</td> </tr> <tr> <td>Hostinger International Ltd</td> <td>Cyprus</td> <td>Application hosting — the virtual server the app runs on, including its PostgreSQL connection</td> <td>Boston, Massachusetts, United States</td> </tr> <tr> <td>netcup GmbH</td> <td>Germany</td> <td>Database hosting — the PostgreSQL database holding everything in section 2</td> <td>Manassas, Virginia, United States</td> </tr> <tr> <td>GitHub, Inc.</td> <td>United States</td> <td>Hosting of this website only — no app data reaches it</td> <td>GitHub Pages global infrastructure</td> </tr> <tr> <td>OpenAI</td> <td>United States</td> <td>
 Embeddings for the optional semantic matcher — <strong>not active today</strong>. It is
             used only when the app is configured with an embeddings key, and it then receives
@@ -181,7 +190,9 @@ Capyo requests no Shopify protected customer data. Its scopes are
 </p> <h2>13. Your rights</h2> <p>Under the GDPR you can ask us to:</p> <ul> <li>confirm what we hold about you and give you a copy (access, Art. 15);</li> <li>correct anything inaccurate (rectification, Art. 16);</li> <li>delete it (erasure, Art. 17);</li> <li>restrict what we do with it (Art. 18);</li> <li>hand it over in a machine-readable form, or send it to another provider (portability, Art. 20);</li> <li>stop processing based on legitimate interests (objection, Art. 21).</li> </ul> <p>
 Email <a href="mailto:gimbernat13@gmail.com">gimbernat13@gmail.com</a> and we will answer within one month.
       You do not need to justify a request. Uninstalling the app starts the deletion described in
-      section 8.
+      section 8. Where a request concerns data the app holds on your instruction as controller, we
+      forward it to you and support you in answering rather than answering on your behalf — that
+      split is set out in the <a href="/capyo/nl/undercut/dpa/">Data Processing Agreement</a>.
 </p> <p>
 You can also complain to a data-protection supervisory authority — normally the one where
       you live, work, or where you believe the problem occurred.
